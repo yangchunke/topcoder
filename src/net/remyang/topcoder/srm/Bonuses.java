@@ -3,7 +3,7 @@
  */
 package net.remyang.topcoder.srm;
 
-import net.remyang.topcoder.utils.ArrayHelper;
+import net.remyang.topcoder.utils.AnswerChecker;
 
 /**
  * http://community.topcoder.com/stat?c=problem_statement&pm=1677&rd=4530
@@ -12,13 +12,13 @@ import net.remyang.topcoder.utils.ArrayHelper;
 public class Bonuses {
 	public static void main(String[] args) {
 		Bonuses c = new Bonuses();
-		ArrayHelper.verify(new int[] { 6, 13, 20, 27, 34 },
+		AnswerChecker.verify(new int[] { 6, 13, 20, 27, 34 },
 				c.getDivision(new int[] { 1, 2, 3, 4, 5 }));
 
-		ArrayHelper.verify(new int[] { 17, 17, 17, 17, 16, 16 },
+		AnswerChecker.verify(new int[] { 17, 17, 17, 17, 16, 16 },
 				c.getDivision(new int[] { 5, 5, 5, 5, 5, 5 }));
 
-		ArrayHelper.verify(
+		AnswerChecker.verify(
 				new int[] { 8, 6, 4, 2, 8, 5, 5, 3, 1, 4, 5, 4, 6, 3, 5, 4, 1,
 						8, 1, 6, 3, 8 },
 				c.getDivision(new int[] { 485, 324, 263, 143, 470, 292, 304,
